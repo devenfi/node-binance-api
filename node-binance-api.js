@@ -5483,6 +5483,7 @@ let api = function Binance( options = {} ) {
                     // Prepare depth cache context
                     let context = Binance.depthCacheContext[symbol];
                     context.snapshotUpdateId = json.lastUpdateId;
+                    if ( !context.messageQueue ) return; 
                     context.messageQueue = context.messageQueue.filter( depth => depth.u > context.snapshotUpdateId );
                     // Process any pending depth messages
                     for ( let depth of context.messageQueue ) {
