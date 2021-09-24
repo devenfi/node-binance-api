@@ -47,9 +47,9 @@
    },
   "repository": {
     "type": "git",
-    "url": "https://github.com/orionx-dev/binance-javascript-sdk-noledger"
+    "url": "https://github.com/devenfi/node-binance-api"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/orionx-dev"
+    "registry":"https://npm.pkg.github.com/devenfi"
   } 
 }
