@@ -3398,10 +3398,10 @@ let api = function Binance( options = {} ) {
                             resolve( response );
                         }
                     }
-                    signedRequest( wapi + 'v3/withdrawHistory.html', params, callback );
+                    signedRequest( sapi + 'v1/capital/withdraw/history', params, callback );
                 } )
             } else {
-                signedRequest( wapi + 'v3/withdrawHistory.html', params, callback );
+                signedRequest( sapi + 'v1/capital/withdraw/history', params, callback );
             }
         },
 
